@@ -1,18 +1,17 @@
-:root{
-  --primary:#003A8F;      /* azul institucional */
-  --secondary:#FFC72C;    /* amarelo destaque */
-  --bg:#F5F7FA;           /* fundo geral */
-  --text:#1F2937;         /* cinza escuro */
-  --border:#E5E7EB;
+:root {
+  --fundo-site: #e2e8f0;   /* Cinza claro sólido (não some com os gráficos) */
+  --card-branco: #ffffff;  /* Branco puro para os blocos */
+  --texto-preto: #000000;  /* Preto absoluto para não ter erro de leitura */
 }
 
-body{
-  margin:0;
-  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-  background:var(--bg);
-  color:var(--text);
+body {
+  margin: 0;
+  background-color: var(--fundo-site) !important;
+  color: var(--texto-preto);
+  font-family: sans-serif;
 }
 
+<<<<<<< HEAD
 /* NAVBAR */
 .nav{
   display:flex; /* Define o layout como flexível, permitindo que os itens dentro da barra de navegação sejam organizados de forma flexível e responsiva.*/
@@ -23,22 +22,43 @@ body{
   background:#fff;/* Define a cor de fundo da barra de navegação como branco, criando um contraste visual com o conteúdo e melhorando a legibilidade. */ 
   border-bottom:1px solid var(--border); /* Adiciona uma borda inferior de 1 pixel com a cor #e2e8f0, criando uma separação visual entre a barra de navegação e o restante do conteúdo da página, melhorando a estrutura visual e a organização. */
   box-shadow:0 2px 8px rgba(0,0,0,.05);
+=======
+/* NAVBAR - Mantendo o padrão que você já tem */
+.nav {
+  background: #000 !important;
+  padding: 1rem;
+  border-bottom: 3px solid #ed1c24;
+}
+.nav * { color: #fff !important; }
+
+/* BLOCOS (Cards, Formulário, Histórico e Gráficos) */
+.card, .form-container, [class*="Container"], [class*="Card"], section, .resume-container {
+  background: var(--card-branco) !important;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+>>>>>>> 7add200 (Ajuste do nome do projeto)
 }
 
-/* LINKS DA NAV */
-.nav a{
-  text-decoration:none;
-  color:var(--primary);
-  font-weight:600;
-  padding:.5rem .75rem;
-  border-radius:6px;
-  transition:.2s;
+/* FORÇA A VISIBILIDADE DE TODOS OS TEXTOS DENTRO DOS BLOCOS */
+/* Isso garante que Descrição, Valor, Histórico e Títulos apareçam */
+label, span, p, h2, h3, th, td, div {
+  color: var(--texto-preto) !important;
+  opacity: 1 !important;
 }
 
-.nav a:hover{
-  background:rgba(0,58,143,.08);
+/* CORES DOS VALORES (ENTRADA/SAÍDA) */
+[style*="color: green"], [style*="color: rgb(0, 128, 0)"] {
+  color: #16a34a !important; 
+  font-weight: bold;
+}
+[style*="color: red"], [style*="color: rgb(255, 0, 0)"] {
+  color: #dc2626 !important; 
+  font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* CONTAINER PRINCIPAL */
 /* A classe .container é necessária para estilizar o contêiner principal da página, proporcionando uma aparência agradável e organizada para o conteúdo. 
 Ela define a largura máxima do contêiner, centraliza-o na página, adiciona espaçamento interno, um fundo branco, bordas arredondadas e uma sombra sutil para destacar o conteúdo. 
@@ -159,3 +179,16 @@ Botões Full-Width: Em dispositivos móveis, é uma boa prática de UX (Experiê
 
 
 */
+=======
+/* BOTÃO ADICIONAR */
+.button {
+  background: #000 !important;
+  color: #fff !important;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+>>>>>>> 7add200 (Ajuste do nome do projeto)

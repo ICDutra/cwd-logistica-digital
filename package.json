@@ -1,7 +1,7 @@
 {
-  "name": "projetoacervodigitalreactjs",
+  "name": "cwd-logistica-digital",
   "version": "0.1.0",
-  "homepage": "https://douglasrm87.github.io/projetoacervodigitalreactjs",
+  "homepage": "https://ICDutra.github.io/cwd-logistica-digital",
   "private": true,
   "dependencies": {
     "@supabase/supabase-js": "^2.99.1",
@@ -9,13 +9,20 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^13.5.0",
+    "apexcharts": "^5.10.6",
     "leaflet": "^1.9.4",
+<<<<<<< HEAD
     "lucide-react": "^1.0.1",
+=======
+    "lucide-react": "^0.577.0",
+>>>>>>> 7add200 (Ajuste do nome do projeto)
     "react": "^19.2.4",
+    "react-apexcharts": "^2.1.0",
     "react-dom": "^19.2.4",
     "react-leaflet": "^5.0.0",
     "react-router-dom": "^7.13.1",
     "react-scripts": "5.0.1",
+    "recharts": "^3.8.0",
     "supabase": "^2.78.1",
     "web-vitals": "^2.1.4"
   },

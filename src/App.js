@@ -1,12 +1,20 @@
-import { Outlet } from 'react-router-dom';
-import NavBar from './componentes/NavBar';
-import './App.css';
+import React from 'react';
+import Resume from './componentes/Resume';
+import Dashboard from './componentes/Dashboard';
+import Form from './componentes/Form';
+import Grid from './componentes/Grid';
 
+const App = () => {
+  // Configuração das cores para logística moderna
+  const colors = {
+    bg: '#1a1a1a',        // Fundo grafite
+    card: '#ffffff',      // Fundo branco dos cards
+    textDark: '#1a1a1a',  // Texto preto dentro dos cards
+    primary: '#ed1c24'    // Vermelho da CWD
+  };
 
-function App() {
-
-  
   return (
+<<<<<<< HEAD
     <>
       <h1>Acervo Digital - Bem-vindo! </h1>
       {/* A NavBar é necessária para que a barra de navegação seja exibida em todas as páginas da aplicação, permitindo que os usuários naveguem facilmente entre as diferentes seções do site. */}
@@ -23,8 +31,40 @@ function App() {
       <Outlet />
       {/* Exemplo de exibição dos dados obtidos do Supabase */}
 
+=======
+    <div style={{ backgroundColor: colors.bg, minHeight: '100vh', padding: '20px', fontFamily: 'Segoe UI, sans-serif' }}>
+>>>>>>> 7add200 (Ajuste do nome do projeto)
       
-    </>
+      {/* HEADER - Incluindo o ícone de caminhão no lugar da foto */}
+      <div style={{ textAlign: 'center', margin: '20px 0', color: 'white' }}>
+        <div style={{ fontSize: '40px', marginBottom: '10px' }}>🚚</div>
+        <h1 style={{ fontSize: '28px', fontWeight: 'bold', margin: '0' }}>CWD LOGÍSTICA DIGITAL</h1>
+        <p style={{ color: '#bbb' }}>Controle Financeiro e Operacional</p>
+      </div>
+      
+      <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+        
+        {/* RESUME - Onde aparece o saldo */}
+        <div style={{ color: colors.textDark }}>
+           <Resume />
+        </div>
+        
+        {/* DASHBOARD - Fundo branco para destacar o gráfico */}
+        <div style={{ backgroundColor: colors.card, padding: '25px', borderRadius: '15px', margin: '30px 0', boxShadow: '0 8px 20px rgba(0,0,0,0.3)' }}>
+          <h2 style={{ fontSize: '18px', marginBottom: '10px', color: colors.textDark }}>Desempenho Operacional</h2>
+          <div style={{ height: '300px', width: '100%' }}>
+            <Dashboard />
+          </div>
+        </div>
+        
+        {/* FORMULÁRIO E GRID - Corrigidos para fundo branco e texto preto */}
+        <div style={{ backgroundColor: colors.card, padding: '25px', borderRadius: '15px', marginTop: '30px', color: colors.textDark }}>
+          <Form />
+          <Grid />
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
 export default App;

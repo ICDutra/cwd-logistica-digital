@@ -1,6 +1,5 @@
 import { createContext, useContext, useState } from 'react';
 import * as api from '../services/api';
-
 // Aula 03
 // O Programa AuthContext é necessário para fornecer um contexto de autenticação para toda a aplicação, permitindo que os componentes acessem informações sobre o usuário autenticado e as funções de login, logout e alteração de senha.
 // Ele é criado usando o createContext do React, e o AuthProvider é um componente que envolve a aplicação e fornece o contexto de autenticação para seus filhos. 

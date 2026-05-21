@@ -1,7 +1,17 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
-export default function NavBar(){
+
+export default function NavBar() {
   return (
-    <nav className="nav">
+    <nav className="nav" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+      {/* Aqui adicionamos a sua logo */}
+      <img 
+        src="/logo-cwd.png" 
+        alt="Logo CWD" 
+        style={{ width: '40px', height: '40px', objectFit: 'contain' }} 
+      />
+      
+      {/* Seus links de navegação */}
       <NavLink to="/">Início</NavLink>
       <NavLink to="/login">Entrar</NavLink>
       <NavLink to="/submit">Submeter</NavLink>
