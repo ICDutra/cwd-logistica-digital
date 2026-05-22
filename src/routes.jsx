@@ -8,7 +8,6 @@ import FirstAccess from './pages/FirstAccess';
 import SubmitWork from './pages/cadastrarformulario/SubmitWork';
 import ReviewQueue from './pages/ReviewQueue';
 import Faculties from './pages/admin/Faculties';
-<<<<<<< HEAD
 import Estado from './pages/admin/Estado'; // Utiliza o supabase para obter os dados do estado do sistema
 import MapPage from './mapabrasil/MapPage';
 import DetailsPage from './mapabrasil/DetailsPage';
@@ -21,11 +20,9 @@ import MapaUnidadesFaculdade from './unidadesfaculdade/MapaUnidadesFaculdade';
 import ConsultaUnidade from './unidadesfaculdade/ConsultaUnidade';
 import Dashboard from './pages/dashboard/Dashboard';
 import Oficina from './pages/Oficina';
-=======
->>>>>>> e017ad1 (atualização do site)
+import Login from './login';
 
 export const router = createBrowserRouter([
-<<<<<<< HEAD
   { path: '/login', element: <Login/> },
   { path: '/projetoacervodigitalreactjs', element:  <App/> },
   {
@@ -55,21 +52,6 @@ export const router = createBrowserRouter([
 
       { path: "/oficina/", element: <Oficina />},
 
-=======
-  { 
-    path: '/', 
-    element: <App />, 
-    children: [
-      // Aqui o LoginSimulado será a primeira tela a aparecer
-      { index: true, element: <LoginSimulado /> }, 
-      
-      { path: 'dashboard', element: <Dashboard /> }, 
-      { path: 'first-access', element: <FirstAccess /> },
-      { path: 'submit', element: <SubmitWork /> },
-      { path: 'review', element: <ReviewQueue /> },
-      { path: 'certificate', element: <Certificate /> },
-      { path: 'admin/faculties', element: <Faculties /> },
->>>>>>> e017ad1 (atualização do site)
     ]
   },
   { path: '/login', element: <LoginSimulado /> }

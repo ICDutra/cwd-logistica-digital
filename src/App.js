@@ -14,7 +14,6 @@ const App = () => {
   };
 
   return (
-<<<<<<< HEAD
     <>
       <h1>Acervo Digital - Bem-vindo! </h1>
       {/* A NavBar é necessária para que a barra de navegação seja exibida em todas as páginas da aplicação, permitindo que os usuários naveguem facilmente entre as diferentes seções do site. */}
@@ -31,9 +30,6 @@ const App = () => {
       <Outlet />
       {/* Exemplo de exibição dos dados obtidos do Supabase */}
 
-=======
-    <div style={{ backgroundColor: colors.bg, minHeight: '100vh', padding: '20px', fontFamily: 'Segoe UI, sans-serif' }}>
->>>>>>> 7add200 (Ajuste do nome do projeto)
       
       {/* HEADER - Incluindo o ícone de caminhão no lugar da foto */}
       <div style={{ textAlign: 'center', margin: '20px 0', color: 'white' }}>
